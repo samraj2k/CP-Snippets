@@ -6,7 +6,7 @@ int fact[mx], invfact[mx], inv[mx];
 //inv[] = (1 / n) % mod
 //cal_fact = Call in main function pre-comp
 //nck = nCr
-int pow(int x, int y){          
+int powm(int x, int y){          
     int res = 1;
     x %= mod;
     while(y){
