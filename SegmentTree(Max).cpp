@@ -15,7 +15,7 @@ public:
         build(2 * v, tl, tm, a);
         build(2 * v + 1, tm + 1, tr, a);
         // merge here
-        t[v] = max(t[2 * v], t[2 * v] + 1);
+        t[v] = max(t[2 * v], t[2 * v + 1]);
     }
     int query(int v, int tl, int tr, int l, int r) {
         if(l > r) {
